@@ -1,0 +1,100 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global/global}
+  \entry{Klimm:ro5002}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=KD}{%
+         family={Klimm},
+         familyi={K\bibinitperiod},
+         given={Detlef},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KD1}
+    \strng{fullhash}{KD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1107/S2052252514017229
+    \endverb
+    \field{number}{5}
+    \field{pages}{281\bibrangedash 290}
+    \field{title}{{Electronic materials with a wide band gap: recent developments}}
+    \verb{url}
+    \verb https://doi.org/10.1107/S2052252514017229
+    \endverb
+    \field{volume}{1}
+    \field{journaltitle}{IUCrJ}
+    \field{month}{09}
+    \field{year}{2014}
+  \endentry
+
+  \entry{neamen2012semiconductor}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=ND}{%
+         family={Neamen},
+         familyi={N\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
+    }
+    \strng{namehash}{ND1}
+    \strng{fullhash}{ND1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{isbn}{9780077418847}
+    \field{title}{Semiconductor Physics And Devices}
+    \verb{url}
+    \verb https://books.google.com.sg/books?id=R_xKAgAAQBAJ
+    \endverb
+    \field{year}{2012}
+  \endentry
+
+  \entry{emission}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=TEP}{%
+         family={Thrush},
+         familyi={T\bibinitperiod},
+         given={Evan\bibnamedelima P.},
+         giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TEP1}
+    \strng{fullhash}{TEP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{note}{Stanford University Dissertation}
+    \field{title}{{Integrated Fluorescence Sensor}}
+    \verb{url}
+    \verb https://www.researchgate.net/publication/260400226_INTEGRATED_FLUORES
+    \verb CENCE_SENSOR
+    \endverb
+    \field{year}{2004}
+  \endentry
+\enddatalist
+\endinput

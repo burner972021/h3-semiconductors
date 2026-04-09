@@ -1,0 +1,325 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1.2in]{geometry}
+\usepackage{amsmath}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage{titlesec}
+\usepackage{authblk}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage[version=4]{mhchem}
+\addbibresource{references.bib}
+
+\setlength{\droptitle}{-1.5cm}
+
+\pretitle{\begin{center}\bfseries\Large}
+
+\title{H3 Semiconductor Physics \& Devices\\Experiment No. L2003B PN Junction Devices\\Lab Report}
+\author{Cao Xizhen}
+\affil{Hwa Chong Institution (College Section)}
+\date{Date of Experiment: April 7th, 2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\clearpage
+
+\section{Introduction}
+
+\subsection{Overview}
+
+The p-n junction is the fundamental building block of modern semiconductor electronics, forming the basis for devices such as rectifiers, transistors, and optoelectronics. By interfacing p-type and n-type materials, a depletion region and a corresponding built-in potential are established. This barrier creates the diode's characteristic non-linear behavior: it allows exponential current flow under forward bias while acting as an insulator under reverse bias.
+
+Beyond basic rectification, p-n junction behavior is governed by carrier statistics that are highly sensitive to thermal energy and the material's energy bandgap. This experiment explores these sensitivities by characterizing the electrical response of standard diodes across temperature gradients and observing the radiative recombination processes in Light Emitting Diodes (LEDs).
+
+\subsection{Objectives}
+
+The objective of this experiment is to:
+
+\begin{enumerate}
+\item obtain the I-V characteristics and parameters of a given diode, 
+\vspace{-0.3\baselineskip}
+\item observe the temperature dependency of diode I-V characteristics
+\vspace{-0.3\baselineskip}
+\item to study and measure the light emission properties of light emitting diodes (LEDs).
+\end{enumerate}
+
+
+
+\section{Theory}
+
+\subsection{I-V characteristics of p-n junctions}
+
+The I-V characteristic of a diode, as shown in \ref{textbook-iv-curve} describes the relationship between the current flowing through the device (I) and the applied voltage (V) across its terminals. Unlike a resistor, which follows Ohm's Law linearly, a diode is a non-linear device that acts as a one-way valve for current \cite{neamen2012semiconductor}.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{./results/iv-curve_cropped.pdf}
+    \caption{Ideal I-V characteristic of a p-n junction diode.}
+    \label{textbook-iv-curve}
+\end{figure}
+
+\subsubsection{Shockley ideal diode equation}
+
+The behavior of the current in both forward and reverse bias can be mathematically modeled by the Shockley Diode Equation (\ref{shockley}):
+
+\begin{equation} \label{shockley}
+I = I_0 (e^{\frac{qV}{nkT}}-1)
+\end{equation}
+
+Where $I_0$ is the reverse saturation current, $q$ is the charge of an electron, k is the Boltzmann constant, T is the absolute temperature in Kelvin, and n is the ideality factor (typically 1 for Germanium and 2 for Silicon).
+
+The I-V curve can be generally divided into three regions: forward bias ($V$ \textgreater $\,\,0$), reverse bias ($V$ \textless $\,\,0$), and breakdown. This experiment will only focus on the forward bias region, where the applied potential reduces the width of the depletion region, allowing majority carriers to diffuse across the junction. In this region, the exponential term in Equation \ref{shockley} dominates, and the "-1" can be neglected for voltages V>3kT/q.
+
+
+\subsubsection{Temperature dependency}
+
+The performance of semiconductor devices is highly sensitive to thermal variations. In a p-n junction, temperature affects the I-V characteristic primarily through the intrinsic carrier concentration ($n_i$), which in turn dictates the reverse saturation current ($I_0$).
+
+To understand how the forward voltage V changes with temperature T at a constant current I, we begin by rearranging the simplified Shockley equation (ignoring the '-1'):
+
+\begin{equation}
+V = \frac{nkT}{q} \ln\left(\frac{I}{I_0}\right)
+\end{equation}
+
+The reverse saturation current $I_0$ is strongly dependent on temperature because it is proportional to $n_i$. The relationship is given by:
+
+\begin{equation}
+I_0 \propto T^3 \exp\left(-\frac{E_g}{kT}\right)
+\end{equation}
+
+Where $E_g$ is the bandgap energy (approx. 1.12 eV for Silicon). Taking the derivative of the voltage expression with respect to temperature ($\frac{\delta V}{\delta T}$) while holding I constant involves accounting for both the linear T in the thermal voltage and the exponential T dependency within $I_0$. The resulting expression for the temperature coefficient is:
+
+\begin{equation}
+\frac{dV}{dT} = \frac{V - (E_g/q)}{T} - \frac{3nk}{q}
+\end{equation}
+
+For a standard Silicon diode operating at room temperature with $E_g / q \approx 1.12 V$, the term ($V - E_g / q$) is negative. This yields the well-known approximation:
+
+\begin{equation}
+\frac{\delta V}{\delta T}|_{I = constant} \approx -2.4 \text{ mV/}^\circ\text{C}
+\end{equation}
+
+This negative temperature coefficient indicates that as the diode heats up, the potential barrier decreases, requiring less applied voltage to maintain the same level of current.
+
+The temperature sensitivity of a p-n junction is fundamentally rooted in the thermal generation of charge carriers. While thermal voltage increases linearly with temperature, its effect is overshadowed by the exponential growth of the reverse saturation current $I_0$.
+
+\subsubsection{Thermal Generation}
+
+The reverse saturation current is defined by the minority carrier concentrations and their respective diffusion constants. Mathematically, $I_0$ is proportional to the square of the intrinsic carrier concentration ($n_i^2$):
+
+\begin{equation}
+I_0 \propto n_i^2 = B T^3 \exp\left(-\frac{E_g}{kT}\right)
+\end{equation}
+
+where B is a material-specific constant and $E_g$ is the energy bandgap. As temperature increases, more electrons gain sufficient thermal energy to overcome the bandgap, leading to an exponential increase in $n_i$. Because $I_0$ represents the "leakage" of minority carriers, an increase in T effectively lowers the barrier for carrier injection under forward bias.
+
+For a constant forward current I, an increase in temperature allows that current to be achieved at a lower applied voltage V. This phenomenon results in a negative temperature coefficient for the forward voltage. By differentiating the diode equation, we find that for Silicon, the voltage required to maintain a specific current decreases by approximately 2.4 mV for every 1$^{\circ}$C increase in temperature.
+
+
+\subsubsection{Built-in Potential}
+
+Additionally, the built-in potential $V_{bi}$ of the junction also decreases with temperature:
+
+\begin{equation}
+V_{bi} = \frac{kT}{q} \ln\left(\frac{N_A N_D}{n_i^2}\right)
+\end{equation}
+
+As $n_i$ rises with temperature, the ratio inside the logarithm decreases faster than the linear T term increases. This reduction in the built-in barrier is the primary reason the I-V curve shifts toward the origin (left) as the device heats up.
+
+
+
+\subsection{Light emitting diodes (LEDs)}
+
+A Light Emitting Diode (LED) is a semiconductor p-n junction that converts electrical energy directly into light through a process known as electroluminescence. Unlike traditional light sources that rely on heat, LEDs are "cold" light sources, making them significantly more efficient.
+
+\subsubsection{Mechanism of light emission}
+
+When a forward-bias voltage is applied to the LED, electrons from the n-side and holes from the p-side are pushed toward the active region of the junction \cite{emission}.
+
+\begin{enumerate}
+\item Recombination: Electrons and holes meet and recombine.
+\item Spontaneous Emission: As an electron moves from the higher-energy conduction band into a lower-energy hole in the valence band, it must release its excess energy.
+\item Photon Release: In direct bandgap semiconductors, this energy is released as a photon. This process is called spontaneous emission because it occurs naturally without an external light trigger.
+\end{enumerate}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.65\linewidth]{./results/spontaneousemission.pdf}
+    \caption{Illustration of absorption, spontaneous emission, and simulated emission}
+\end{figure}
+
+
+\subsubsection{The bandgap and light emission characteristics}
+
+The energy of the emitted photon ($E$) is approximately equal to the bandgap energy ($E_g$) of the semiconductor material. This relationship is defined by the equation:
+
+\begin{equation}
+    \label{photon-energy}
+    E = E_g = \frac{hc}{\lambda}
+\end{equation}
+
+Where $h$ is Planck's constant, $c$ is the speed of light, and $\lambda$ is the peak wavelength.
+
+Because $E_g$ is an intrinsic property of the material, the peak wavelength, and thus the specific colour of the LED, is detemined by the choice of semiconductor material.
+
+Additionally, while all semiconductors have a bandgap, not all are suitable for efficient light emission. This is determined by the alignment of the conduction band minimum and the valence band maximum in k-space (momentum space).
+
+\begin{enumerate}
+\item \textbf{Direct Bandgap:} The conduction band minimum and valence band maximum align at the same momentum ($k=0$). This allows electrons to recombine with holes and release energy directly as a \textbf{photon} without a change in momentum.
+\item \textbf{Indirect Bandgap:} The band extrema are offset in momentum space. Recombination requires a third party—a phonon (lattice vibration)—to conserve momentum. This three-body interaction is inefficient, typically dissipating energy as \textbf{heat} rather than light.
+\end{enumerate}
+
+\subsubsection{Spectral characteristics}
+
+LEDs are often described as monochromatic, but they differ significantly from other sources:
+
+\begin{enumerate}
+\item LED vs. Incandescent bulbs: Incandescent bulbs use blackbody radiation, emitting a broad "white" spectrum that includes infrared (heat). LEDs use a narrow band spectrum, concentrating their energy into a specific colour, which prevents energy waste.
+\item Spectral Bandwidth: While narrow, LEDs are not perfectly monochromatic like lasers. They have a finite spectral linewidth (typically 20nm-50nm) due to the thermal distribution of carriers within the energy bands. 
+\end{enumerate}
+
+Table \ref{spectral-table} shows some examples of semiconductor materials used for optics fabrication \cite{Klimm:ro5002}. 
+
+\begin{table}[!htbp]
+    \label{spectral-table}
+\centering
+\caption{Semiconductor Materials and their Optical Characteristics}
+\label{tab:led_materials}
+\small % Slightly smaller font to ensure it fits the page width
+\begin{tabular}{lllll}
+\toprule
+\textbf{Semiconductor Name} & \textbf{Composition} & \textbf{Wavelength (nm)} & \textbf{colour} & \textbf{Bandgap (eV)} \\ \midrule
+Gallium Nitride & \ce{AlGaInN} & \textless 400 & Ultraviolet & 3.1--4.4 \\
+Indium Gallium Nitride & \ce{InGaN} & 400--450 & Violet & 2.8--4.0 \\
+Silicon Carbide & \ce{SiC}/\ce{InGaN} & 450--500 & Blue & 2.5--3.7 \\
+Gallium Phosphide & \ce{AlGaInP}/\ce{GaP} & 500--570 & Green & 1.9--4.0 \\
+Gallium Arsenide Phosphide & \ce{GaAsP} & 570--590 & Yellow & 2.1--2.2 \\
+Alum. Gal. Indium Phosphide & \ce{AlGaInP} & 590--610 & Orange & 2.0--2.1 \\
+Alum. Gallium Arsenide & \ce{AlGaAs}/\ce{GaAsP} & 610--760 & Red & 1.6--2.0 \\
+Gallium Arsenide & \ce{GaAs} & \textgreater 760 & Infrared & \textless 1.9 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+\subsubsection{Factors affecting the spectrum}
+
+The output of an LED is not static; it can be shifted by environmental and operational factors:
+
+\begin{enumerate}
+\item Temperature Sensitivity: As the junction temperature increases, the semiconductor bandgap typically narrows. This causes a red-shift (longer wavelength) in the peak emission and a decrease in overall intensity.
+\item Current Density: Increasing the drive current can cause a slight "blue-shift" in some materials due to band-filling effects, though this is often offset by the heat generated by the higher current.
+\end{enumerate}
+
+
+\section{Experimental Technique}
+
+\subsection{I-V characteristics}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{./results/ivdisplay_cropped.pdf}
+    \caption{Sweep circuit for I-V display}
+    \label{iv-display}
+\end{figure}
+
+
+\subsection{Temperature Dependence}
+
+
+\subsection{Ideality factor and reverse saturation current}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{./results/diodeparameter_cropped.pdf}
+    \caption{Circuit for diode parameter extraction}
+    \label{parameter-extraction}
+\end{figure}
+
+
+\subsection{Light current characteristic of an LED}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{./results/schematic-layout_cropped.pdf}
+    \caption{Schematic layout for L-I measurements}
+    \label{l-i-measurements}
+\end{figure}
+
+\subsection{Emission spectrum of an LED}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{./results/gratingmonochromator_cropped.pdf}
+    \caption{Measurement of emission spectrum using a grating spectrometer}
+    \label{monochromator}
+\end{figure}
+
+
+\section{Results and Discussions}
+
+\subsection{Finding ideality factor and reverse saturation current of diode}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{./results/iv-curve-semilog.pdf}
+    \caption{$\ln{I}$ (A) plotted against voltage (V)}
+    \label{iv-semilog}
+\end{figure}
+
+\subsection{I-V characteristics of diode under temperature variation}
+
+\begin{enumerate}
+\item plot observed results sketch
+\item plot ideal shockley diode equation compared to observed values
+\end{enumerate}
+
+explain the disparity
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{./results/iv-sketch.pdf}
+    \caption{Sketch of IV curve of diode, at room temperature and with heating}
+    \label{iv-sketch}
+\end{figure}    
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{./results/ideal-iv.pdf}
+    \caption{Ideal shockley diode I-V characteristics plotted with measured diode I-V characteristics at room temperature}
+    \label{iv-sketch}
+\end{figure}    
+
+\subsection{Light-current curve}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{./results/light_current_curve.pdf}
+    \caption{Light intensity plotted against current through the LED.}
+    \label{light-current}
+\end{figure}
+
+The data was able to be fitted to a straight line, supporting the linear relationship between current and light intensity of diode.
+
+\subsection{Emission spectrum of LED}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{./results/emission_spectrum.pdf}
+    \caption{Light intensity plotted against emission wavelength of LED.}
+    \label{emission-spectrum}
+\end{figure}
+
+
+\section{Conclusion}
+
+
+\section{References}
+
+\printbibliography
+
+\end{document}
