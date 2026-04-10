@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 I0 = 1.01e-8   # Reverse saturation current
-n = 1.82     # Ideality factor
+n = 1.27     # Ideality factor
 Vt = 0.0252 # Thermal voltage at room temp
 
 def shockley(V, I0, n):

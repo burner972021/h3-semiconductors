@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.27)  9 APR 2026 16:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.27)  10 APR 2026 10:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -597,11 +597,7 @@ Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
- (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (./report.aux
-
-LaTeX Warning: Label `iv-sketch' multiply defined.
-
-)
+ (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -691,7 +687,13 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'report.bbl' found.
- (./report.bbl)
+ (./report.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'shockley-read-hall':
+(biblatex)                - Invalid format of field 'month'.
+
+)
 Package biblatex Info: Reference section=0 on input line 25.
 Package biblatex Info: Reference segment=0 on input line 25.
 Package hyperref Info: Link coloring OFF on input line 25.
@@ -715,125 +717,132 @@ Package chemgreek Info: Activating mapping `default' on line 25.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<./results/iv-curve_cropped.pdf, id=150, 235.53998pt x 156.17346pt>
+<./results/iv-curve_cropped.pdf, id=171, 235.53998pt x 156.17346pt>
 File: ./results/iv-curve_cropped.pdf Graphic file (type pdf)
 <use ./results/iv-curve_cropped.pdf>
 Package pdftex.def Info: ./results/iv-curve_cropped.pdf  used on input line 61.
 (pdftex.def)             Requested size: 212.03017pt x 140.58817pt.
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 76.
- (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 76.
 
 
 [2
 
  <./results/iv-curve_cropped.pdf>]
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 82.
+ (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 82.
+
 
 [3]
-<./results/spontaneousemission.pdf, id=242, 639.89063pt x 319.94531pt>
+<./results/spontaneousemission.pdf, id=264, 639.89063pt x 319.94531pt>
 File: ./results/spontaneousemission.pdf Graphic file (type pdf)
 <use ./results/spontaneousemission.pdf>
-Package pdftex.def Info: ./results/spontaneousemission.pdf  used on input line 152.
+Package pdftex.def Info: ./results/spontaneousemission.pdf  used on input line 162.
 (pdftex.def)             Requested size: 275.63663pt x 137.81789pt.
 
 
 [4 <./results/spontaneousemission.pdf>]
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 197.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 209.
 
-Overfull \hbox (15.55827pt too wide) in paragraph at lines 194--206
+Overfull \hbox (15.55827pt too wide) in paragraph at lines 206--218
  [][] 
  []
 
-<./results/ivdisplay_cropped.pdf, id=260, 454.20692pt x 159.96764pt>
+<./results/ivdisplay_cropped.pdf, id=281, 454.20692pt x 159.96764pt>
 File: ./results/ivdisplay_cropped.pdf Graphic file (type pdf)
 <use ./results/ivdisplay_cropped.pdf>
-Package pdftex.def Info: ./results/ivdisplay_cropped.pdf  used on input line 225.
+Package pdftex.def Info: ./results/ivdisplay_cropped.pdf  used on input line 238.
 (pdftex.def)             Requested size: 296.84093pt x 104.54889pt.
-<./results/diodeparameter_cropped.pdf, id=261, 403.73837pt x 122.82889pt>
-File: ./results/diodeparameter_cropped.pdf Graphic file (type pdf)
-<use ./results/diodeparameter_cropped.pdf>
-Package pdftex.def Info: ./results/diodeparameter_cropped.pdf  used on input line 238.
-(pdftex.def)             Requested size: 296.84093pt x 90.31093pt.
-<./results/schematic-layout_cropped.pdf, id=262, 482.77364pt x 132.3645pt>
-File: ./results/schematic-layout_cropped.pdf Graphic file (type pdf)
-<use ./results/schematic-layout_cropped.pdf>
-Package pdftex.def Info: ./results/schematic-layout_cropped.pdf  used on input line 248.
-(pdftex.def)             Requested size: 296.84093pt x 81.38852pt.
-<./results/gratingmonochromator_cropped.pdf, id=263, 458.97473pt x 194.25574pt>
-File: ./results/gratingmonochromator_cropped.pdf Graphic file (type pdf)
-<use ./results/gratingmonochromator_cropped.pdf>
-Package pdftex.def Info: ./results/gratingmonochromator_cropped.pdf  used on input line 257.
-(pdftex.def)             Requested size: 296.84093pt x 125.63336pt.
-<./results/iv-curve-semilog.pdf, id=264, 578.16pt x 433.62pt>
-File: ./results/iv-curve-semilog.pdf Graphic file (type pdf)
-<use ./results/iv-curve-semilog.pdf>
-Package pdftex.def Info: ./results/iv-curve-semilog.pdf  used on input line 269.
-(pdftex.def)             Requested size: 296.84093pt x 222.62537pt.
 
 
 [5]
+<./results/diodeparameter_cropped.pdf, id=301, 403.73837pt x 122.82889pt>
+File: ./results/diodeparameter_cropped.pdf Graphic file (type pdf)
+<use ./results/diodeparameter_cropped.pdf>
+Package pdftex.def Info: ./results/diodeparameter_cropped.pdf  used on input line 255.
+(pdftex.def)             Requested size: 296.84093pt x 90.31093pt.
+<./results/schematic-layout_cropped.pdf, id=303, 482.77364pt x 132.3645pt>
+File: ./results/schematic-layout_cropped.pdf Graphic file (type pdf)
+<use ./results/schematic-layout_cropped.pdf>
+Package pdftex.def Info: ./results/schematic-layout_cropped.pdf  used on input line 267.
+(pdftex.def)             Requested size: 296.84093pt x 81.38852pt.
 
-[6 <./results/ivdisplay_cropped.pdf> <./results/diodeparameter_cropped.pdf> <./results/schematic-layout_cropped.pdf> <./results/gratingmonochromator_cropped.pdf>]
-<./results/iv-sketch.pdf, id=409, 505.89pt x 361.35pt>
+
+[6 <./results/ivdisplay_cropped.pdf> <./results/diodeparameter_cropped.pdf>]
+<./results/gratingmonochromator_cropped.pdf, id=375, 458.97473pt x 194.25574pt>
+File: ./results/gratingmonochromator_cropped.pdf Graphic file (type pdf)
+<use ./results/gratingmonochromator_cropped.pdf>
+Package pdftex.def Info: ./results/gratingmonochromator_cropped.pdf  used on input line 280.
+(pdftex.def)             Requested size: 296.84093pt x 125.63336pt.
+<./results/iv-curve-semilog.pdf, id=378, 505.89pt x 361.35pt>
+File: ./results/iv-curve-semilog.pdf Graphic file (type pdf)
+<use ./results/iv-curve-semilog.pdf>
+Package pdftex.def Info: ./results/iv-curve-semilog.pdf  used on input line 294.
+(pdftex.def)             Requested size: 339.24956pt x 242.32379pt.
+
+
+[7 <./results/schematic-layout_cropped.pdf> <./results/gratingmonochromator_cropped.pdf>]
+<./results/iv-sketch.pdf, id=450, 505.89pt x 361.35pt>
 File: ./results/iv-sketch.pdf Graphic file (type pdf)
 <use ./results/iv-sketch.pdf>
-Package pdftex.def Info: ./results/iv-sketch.pdf  used on input line 285.
-(pdftex.def)             Requested size: 296.84093pt x 212.03125pt.
-<./results/ideal-iv.pdf, id=410, 505.89pt x 361.35pt>
+Package pdftex.def Info: ./results/iv-sketch.pdf  used on input line 328.
+(pdftex.def)             Requested size: 339.24956pt x 242.32379pt.
+<./results/ideal-iv.pdf, id=451, 505.89pt x 361.35pt>
 File: ./results/ideal-iv.pdf Graphic file (type pdf)
 <use ./results/ideal-iv.pdf>
-Package pdftex.def Info: ./results/ideal-iv.pdf  used on input line 292.
-(pdftex.def)             Requested size: 296.84093pt x 212.03125pt.
-<./results/light_current_curve.pdf, id=411, 578.16pt x 433.62pt>
+Package pdftex.def Info: ./results/ideal-iv.pdf  used on input line 335.
+(pdftex.def)             Requested size: 339.24956pt x 242.32379pt.
+
+
+[8 <./results/iv-curve-semilog.pdf>]
+
+[9 <./results/iv-sketch.pdf> <./results/ideal-iv.pdf>]
+<./results/light_current_curve.pdf, id=648, 578.16pt x 433.62pt>
 File: ./results/light_current_curve.pdf Graphic file (type pdf)
 <use ./results/light_current_curve.pdf>
-Package pdftex.def Info: ./results/light_current_curve.pdf  used on input line 301.
-(pdftex.def)             Requested size: 296.84093pt x 222.62537pt.
-<./results/emission_spectrum.pdf, id=412, 505.89pt x 361.35pt>
+Package pdftex.def Info: ./results/light_current_curve.pdf  used on input line 382.
+(pdftex.def)             Requested size: 339.24956pt x 254.4375pt.
+
+
+[10 <./results/light_current_curve.pdf>]
+<./results/emission_spectrum.pdf, id=705, 505.89pt x 361.35pt>
 File: ./results/emission_spectrum.pdf Graphic file (type pdf)
 <use ./results/emission_spectrum.pdf>
-Package pdftex.def Info: ./results/emission_spectrum.pdf  used on input line 312.
-(pdftex.def)             Requested size: 296.84093pt x 212.03125pt.
+Package pdftex.def Info: ./results/emission_spectrum.pdf  used on input line 412.
+(pdftex.def)             Requested size: 339.24956pt x 242.32379pt.
 
 
-[7 <./results/iv-curve-semilog.pdf>]
+[11{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
-[8 <./results/iv-sketch.pdf> <./results/ideal-iv.pdf>]
+[12 <./results/emission_spectrum.pdf>]
 
-[9 <./results/light_current_curve.pdf> <./results/emission_spectrum.pdf>]
-
-[10] (./report.aux)
+[13] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 2F0B9241B300736FD5F0CF7848076BE1;5210.
+(rerunfilecheck)             Checksum: 6D874B7E37D6FD54605C03F128D91105;6966.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22671 strings out of 475171
- 452404 string characters out of 5767095
- 1054387 words of memory out of 5000000
- 45381 multiletter control sequences out of 15000+600000
- 564207 words of font info for 55 fonts, out of 8000000 for 9000
+ 22736 strings out of 475171
+ 453989 string characters out of 5767095
+ 1058943 words of memory out of 5000000
+ 45416 multiletter control sequences out of 15000+600000
+ 564542 words of font info for 56 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 66i,12n,81p,1927b,2059s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (10 pages, 846257 bytes).
+ 66i,12n,81p,1927b,1322s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on report.pdf (13 pages, 882389 bytes).
 PDF statistics:
- 819 PDF objects out of 1000 (max. 8388607)
- 464 compressed objects within 5 object streams
- 75 named destinations out of 1000 (max. 500000)
- 272 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 915 PDF objects out of 1000 (max. 8388607)
+ 554 compressed objects within 6 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
 

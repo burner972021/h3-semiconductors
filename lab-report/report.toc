@@ -9,19 +9,23 @@
 \contentsline {subsubsection}{\numberline {2.1.4}Built-in Potential}{4}{subsubsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.2}Light emitting diodes (LEDs)}{4}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Mechanism of light emission}{4}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}The bandgap and light emission characteristics}{4}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2}The bandgap and light emission characteristics}{5}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}Spectral characteristics}{5}{subsubsection.2.2.3}%
 \contentsline {subsubsection}{\numberline {2.2.4}Factors affecting the spectrum}{5}{subsubsection.2.2.4}%
-\contentsline {section}{\numberline {3}Experimental Technique}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}I-V characteristics}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Temperature Dependence}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Ideality factor and reverse saturation current}{7}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Light current characteristic of an LED}{7}{subsection.3.4}%
+\contentsline {section}{\numberline {3}Experimental Technique}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}I-V characteristics}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Temperature Dependence}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Ideality factor and reverse saturation current}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Light current characteristic of an LED}{6}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Emission spectrum of an LED}{7}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Results and Discussions}{7}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Finding ideality factor and reverse saturation current of diode}{7}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}I-V characteristics of diode under temperature variation}{7}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Light-current curve}{7}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Emission spectrum of LED}{10}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Conclusion}{10}{section.5}%
-\contentsline {section}{\numberline {6}References}{10}{section.6}%
+\contentsline {subsection}{\numberline {4.2}I-V characteristics of diode under temperature variation}{8}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Shockley ideal diode and observed diode characteristics}{8}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Factors determining the turn-on voltage of a p-n junction diode}{10}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Light-current curve}{10}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Observed change in the gradient of the measured L-I curve at large currents}{11}{subsubsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.4}Emission spectrum of LED}{11}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Factors influencing the spectral line width of the measured LED emission spectrum}{12}{subsubsection.4.4.1}%
+\contentsline {section}{\numberline {5}Conclusion}{13}{section.5}%
+\contentsline {section}{\numberline {6}References}{13}{section.6}%

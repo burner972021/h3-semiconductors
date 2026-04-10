@@ -7,6 +7,7 @@ current_log = np.array([0.01, 0.05, 0.2, 1.0, 3.0, 5.0, 10.0])
 
 # Perform linear regression: ln(I) = slope * V + intercept
 slope, intercept = np.polyfit(voltage_log, np.log(current_log), 1)
+print(slope, intercept)
 I_0 = np.exp(intercept)
 
 # Define ranges for the lines

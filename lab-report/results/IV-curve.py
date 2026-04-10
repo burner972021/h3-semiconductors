@@ -6,9 +6,9 @@ m = (0.176 - 0.059) / (1.0 - 0.8)  # 0.585
 b = 0.059 - m * 0.8                # -0.409
 v_on_intercept = -b / m            # ~0.699
 
-# --- Heated Diode Parameters (Von=0.6, Point=(0.9, 0.150)) ---
-m_h = (0.150 - 0) / (0.9 - 0.6)    # 0.5
-b_h = 0.150 - m_h * 0.9            # -0.3
+# --- Heated Diode Parameters (Von=0.6, Point=(0.88, 0.150)) ---
+m_h = (0.150 - 0) / (0.88 - 0.6)    # 0.5
+b_h = 0.150 - m_h * 0.88            # -0.3
 v_on_h = 0.6
 
 # Functions
@@ -45,7 +45,7 @@ plt.plot(v_extrap_h, linear_region_h(v_extrap_h), 'm-', alpha=0.3)
 
 # Markers
 plt.scatter([0.6, 0.8, 1.0], [0, 0.059, 0.176], marker='x', s=75, color='red', label='Data Points')
-plt.scatter([0.5, 0.9], [0, 0.150], marker='x', s=75, color='red')
+plt.scatter([0.5, 0.88], [0, 0.150], marker='x', s=75, color='red')
 
 # Turn-on Voltage lines
 plt.axvline(x=v_on_intercept, color='red', linestyle='--', alpha=0.4, label='Turn-on Voltage')
