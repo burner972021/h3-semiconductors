@@ -79,7 +79,7 @@ Which, under normal forward bias operation, can be approximated to:
 
 Where $I_0$ is the reverse saturation current, $q$ is the charge of an electron, k is the Boltzmann constant, T is the absolute temperature in Kelvin, and n is the ideality factor (typically 1 for Germanium and 2 for Silicon).
 
-The I-V curve can be generally divided into three regions: forward bias ($V$ \textgreater $\,\,0$), reverse bias ($V$ \textless $\,\,0$), and breakdown. This experiment will only focus on the forward bias region, where the applied potential reduces the width of the depletion region, allowing majority carriers to diffuse across the junction. In this region, the exponential term in Equation \ref{shockley} dominates, and the "-1" can be neglected for voltages V>3kT/q.
+The I-V curve can be generally divided into three regions: forward bias ($V$ \textgreater $\,\,0$), reverse bias ($V$ \textless $\,\,0$), and breakdown. This experiment will only focus on the forward bias region, where the applied potential reduces the width of the depletion region, allowing majority carriers to diffuse across the junction. In this region, the exponential term in Equation \ref{shockley} dominates, and the "-1" can be neglected for voltages V \textgreater 3kT/q.
 
 
 \subsubsection{Temperature dependency}
@@ -341,7 +341,7 @@ The experimental values for the I-V characteristics of the diode at both room te
 
 From figure.\ref{iv-sketch}, it can be seen that the turn-on voltages of the diode at room temperature and after heating are approximately 0.7 V and 0.6 V. The voltage shift at constant 150 mA current is about -90 mV. 
 
-By using equations ( \ref{eqn:tempconst} ) and ( \ref{eqn:temprelation} ), an expression for $\Delta T$ can be formed:
+By using equations (\ref{eqn:tempconst}) and (\ref{eqn:temprelation}), an expression for $\Delta T$ can be formed:
 
 \begin{equation}
 \Delta T = \frac{\Delta V (mV)}{-2.4 (mV/K)}
@@ -371,7 +371,7 @@ The turn-on voltage ($V_{on}$) of a p-n junction is not a fixed physical constan
     Higher doping concentrations increase the density of majority carriers, which widens the separation between Fermi levels in the neutral regions. This results in a larger $V_{bi}$ and a corresponding increase in the voltage required to drive a significant current through.
 
     \item \textbf{Temperature dependence:} 
-    The turn-on voltage is highly sensitive to temperature ($T$). As temperature increases, the intrinsic carrier concentration ($n_i$) increases exponentially. This causes a significant increase in the reverse saturation current ($I_0$), which effectively lowers the potential barrier[cite: 1]. Experimentally, this is observed as a leftward shift in the I-V characteristic, with $V_{on}$ typically decreasing at a rate of approximately $-2.4$ mV/K for silicon devices \cite{silicon-temp}.
+    The turn-on voltage is highly sensitive to temperature ($T$). As temperature increases, the intrinsic carrier concentration ($n_i$) increases exponentially. This causes a significant increase in the reverse saturation current ($I_0$), which effectively lowers the potential barrier. Experimentally, this is observed as a leftward shift in the I-V characteristic, with $V_{on}$ typically decreasing at a rate of approximately $-2.4$ mV/K for silicon devices \cite{silicon-temp}.
 \end{enumerate}
 
 
