@@ -1,0 +1,23 @@
+# Formulas not in formula sheet
+
+for whatever reason
+
+## Storage Capacitance 
+
+$$ C_s = \epsilon A \sqrt{\frac{q}{2 \epsilon (V_0 - V_a)} \frac{N_a N_d}{N_a + N_d}} $$
+
+## Storage vs Junction capacitance:
+
+- FORWARD BIAS: $C_j <<  C_s$
+- REVERSE BIAS: $C_j >> C_s$
+
+## Schottky Contact Current
+
+$$ I = A A^{**} T^2 (\exp(-\frac{q \phi_B}{K_B T})) $$
+
+Where $A^{**}$ is Richardson's constant.
+
+## Reverse Breakdown
+
+$$ V_{br} = \frac{\epsilon_r \epsilon_0 (N_a + N_d)}{2 q N_a N_d} \xi_{max}^2
+
