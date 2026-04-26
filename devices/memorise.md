@@ -19,5 +19,11 @@ Where $A^{**}$ is Richardson's constant.
 
 ## Reverse Breakdown
 
-$$ V_{br} = \frac{\epsilon_r \epsilon_0 (N_a + N_d)}{2 q N_a N_d} \xi_{max}^2
+$$ V_{br} = \frac{\epsilon_r \epsilon_0 (N_a + N_d)}{2 q N_a N_d} \xi_{max}^2 $$
+
+## Ideal shottky barrier height
+
+$$ q \phi _s = q (\phi _m - \chi) $$
+
+This does not change with different bias as electron affinity is an intrinsic property of the semiconductor.
 
