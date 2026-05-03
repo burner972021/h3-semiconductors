@@ -52,3 +52,23 @@ Applying a forward bias decreases the built-in potential barrier, which decrease
 electrons in region with higher $E_f$ flows to region with lower $E_f$. As metal possesses multiple greater magnitudes of number of free electrons, depletion region is essentially zero and only a layer of surface charge is formed on the metal. In the semiconductor, however, the depletion region is formed due to uncompensated donor/acceptor ions.
 - additionally, as electrons are free moving in metal, voltage drop across it is zero (equipotential region), while for the semiconductor the electric field would occur across the space charge region.
 - analogous to a one-sided $p^+n$ junction, for metal - n type semiconductor contacts.
+
+
+## metal-semiconductor contacts
+
+<img src='./diagrams/fig9-1.png'>
+
+
+
+## Comparison between a schottky barrier diode and a pn junction diode
+
+### reverse saturation current
+
+- different current mechanisms
+    - schottky diodes current determined by thermionic emission of majority carriers over potential barrier
+    - pn diode current determined by diffusion of minority carriers
+
+**thermionic emission**:
+- due to carriers gaining enough thermal energy to jump the potential barrier in schottky diode. 
+- as magnitude of majority carrier concentration is very large, thermionic emission is more frequent and results in larger reverse saturation current.
+- drift current (diffuse to n side)

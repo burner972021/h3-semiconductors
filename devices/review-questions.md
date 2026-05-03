@@ -85,3 +85,83 @@ Majority carriers that diffuse to the other side are eliminated by electron-hole
 
 Net negative region on p side, net positive region on n side. 
 
+
+## Temperature dependence of reverse saturation current
+
+$$ I_0 = q A (n_i^2) (\frac{D_n}{L_n N_a} + \frac{D_p}{L_p N_d}) $$
+
+$$ n_i^2 = N_c N_v \exp(-\frac{E_g}{k_B T}) $$
+
+The greater the temperature, the greater the intrinsic carrier concentration, and hence the greater the reverse saturation current. 
+
+(As temperature increases, electrons gain more thermal energy and thus more covalent bonds are broken, increasing number of electron hole pairs)
+
+
+## Storage (diffusion) capacitance and resistance
+
+significant only under forward current conditions. When forward voltage is applied, majority carriers injected across depletion region into other side and becomes excess minority carriers in the quasi neutral regions. Due to exponential relationship, small change in voltage leads to large change in number of excess carriers injected. Requires finite amount of time for carriers to be transported -> large number of charge, larger $\frac{d Q}{d V}$, hence larger $C_s$.
+
+
+## Explain the physical mechanism of the generation current and recombination current.
+
+1. Thermal generation current(under reverse bias); primary component of reverse current and arises from thermal generation of electron-hole pairs in the depletion region. 
+2. Recombination current(under forward bias); major component of forward current that arises from injected minority carriers recombining with abundant majority carriers in bulk material
+
+
+## If a forward based pn junction is switched off, what happens to the stored minority carriers? In which direction is the current immediately after the diode is switched off?
+
+Piled up minority carriers at the depletion region edges, after the bias is switched off, the built in electric field will pull the excess carriers to the other side ($\Delta p_{n}$ to p side, $\Delta n_{p}$ to n side). Hence there is a drift current that directs from the n side to p side (reverse current).
+
+after bias removed  
+minority carriers recombines with majority carriers on that side  
+drift force = diffusion force 
+
+
+## Why does reverse saturation current exist?
+
+constant thermal generation of electron hole pairs.
+- any minority carrier thermally generated within the depletion region or within one diffusion length away from it will move to the junction
+- form drift current as they are moved by the electric field
+
+called 'reverse saturation current' because it is limited by the minority carrier concentration (independent of voltage)
+
+$$ I_0 = q A (\frac{D_p}{L_p}p_{n0} + \frac{D_n}{L_n} n_{p0}) $$
+
+
+## What is the mechanism of charge flow in forward-biased schottky diode?
+
+Majority carrier current.
+
+
+## Why is the reverse saturation current of a schottky diode so much higher than pn junction?
+
+Schottky diodes are majority carrier devices. Its current is dependent on the thermionic emission of majority carriers over the depletion region, 
+
+
+## Difference in switching characteristics between pn and schottky diode? Storage charge behaviour?
+
+Schottky diodes have a much faster switching time than pn junctions as its current is due to majority carriers and hence there is no storage capacitance due to minority carrier pile up.
+
+
+## Why is the barrier in an ohmic contact low? schottky contact vs ohmic contact
+
+<img src='./diagrams/fig9-1.png'>
+
+schottky contact: depletion region on semiconductor. Eg n-type schottky contact: electrons flow from semiconductor to metal, region with uncompensated donor atoms are formed -> rectifying behaviour
+
+ohmic contact: no depletion region. Instead there is a highly conductive region near the junction. Eg n-type ohmic contact, metals overall positive, semiconductor has excess electrons -> increasing charge density -> increasing conductivity. p type: metal overall negative, etc...
+
+in ohmic p-type:
+- 
+
+## What happens to the fermi levels of the metal and semiconductor in a schottky contact?
+
+the energy levels in the metal do not shift. the energy bands and fermi level of the semiconductor shifts to that of the metal's.
+- reason: density of carriers in metal is magnitudes greater than that of the semiconductor's. Effects of carriers between the two materials on their fermi levels are negligible on the metal, as compared to the semiconductor.
+
+
+## Why is there a bending of the band diagram on the semiconductor side?
+
+in schottky n-type contact: 
+- metal overall negatively charged, semiconductor overall positively charged
+- in order to move closer to the metal, the electrons in the semiconductor requires higher potential
